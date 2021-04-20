@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zucc.zyh.dao.MovieDao">
+
+    <resultMap type="com.zucc.zyh.entity.MovieEntity" id="movieMap">
+        <result property="movieId" column="movie_id"/>
+        <result property="title" column="title"/>
+        <result property="country" column="country"/>
+        <result property="category" column="category"/>
+        <result property="downloadUrl" column="download_url"/>
+        <result property="introduce" column="introduce"/>
+        <result property="language" column="language"/>
+        <result property="mainActor" column="main_actor"/>
+        <result property="movieTime" column="movie_time"/>
+        <result property="publishDate" column="publish_date"/>
+    </resultMap>
+
+
+</mapper>

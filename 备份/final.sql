@@ -4,7 +4,6 @@
 /*==============================================================*/
 
 
-drop table if exists admin;
 
 drop table if exists movie;
 
@@ -12,17 +11,7 @@ drop table if exists other;
 
 drop table if exists ratings;
 
-drop table if exists user;
 
-/*==============================================================*/
-/* Table: admin                                                 */
-/*==============================================================*/
-create table admin
-(
-   admin                varchar(10) not null,
-   pwd                  varchar(10) not null,
-   primary key (admin)
-);
 
 /*==============================================================*/
 /* Table: movie                                                 */
@@ -65,21 +54,6 @@ create table ratings
    timestamp            int not null
 );
 
-/*==============================================================*/
-/* Table: user                                                  */
-/*==============================================================*/
-create table user
-(
-   user_id              int not null auto_increment,
-   user_no              varchar(20) not null,
-   user_name            varchar(10) not null,
-   user_pwd             varchar(20),
-   user_mail            varchar(50),
-   gender               varchar(1),
-   age                  int,
-   occupation           int,
-   primary key (user_id)
-);
 
 alter table other add constraint FK_Reference_3 foreign key (user_id)
       references user (user_id) on delete restrict on update restrict;

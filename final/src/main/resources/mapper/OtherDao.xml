@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zucc.zyh.dao.OtherDao">
+
+    <resultMap type="com.zucc.zyh.entity.OtherEntity" id="otherMap">
+        <result property="userId" column="user_id"/>
+        <result property="movieId" column="movie_id"/>
+        <result property="want" column="want"/>
+        <result property="comment" column="comment"/>
+        <result property="timestamp" column="timestamp"/>
+    </resultMap>
+
+
+</mapper>
