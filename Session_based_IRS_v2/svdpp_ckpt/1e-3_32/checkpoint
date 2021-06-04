@@ -1,0 +1,2 @@
+model_checkpoint_path: "tpgr_LSTM.ckpt"
+all_model_checkpoint_paths: "tpgr_LSTM.ckpt"

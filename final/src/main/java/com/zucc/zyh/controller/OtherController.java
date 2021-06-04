@@ -17,7 +17,7 @@ import com.zucc.zyh.utils.PageUtils;
 import com.zucc.zyh.utils.R;
 
 @RestController
-@RequestMapping("generator/other")
+@RequestMapping("other")
 public class OtherController {
     @Autowired
     private OtherService otherService;

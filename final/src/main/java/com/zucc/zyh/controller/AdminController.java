@@ -16,7 +16,7 @@ import com.zucc.zyh.utils.PageUtils;
 import com.zucc.zyh.utils.R;
 
 @RestController
-@RequestMapping("generator/admin")
+@RequestMapping("admin")
 public class AdminController {
     @Autowired
     private AdminService adminService;

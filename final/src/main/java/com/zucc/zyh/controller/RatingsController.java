@@ -1,15 +1,11 @@
 package com.zucc.zyh.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.zucc.zyh.entity.RatingsEntity;
 import com.zucc.zyh.service.RatingsService;
@@ -19,7 +15,7 @@ import com.zucc.zyh.utils.R;
 
 
 @RestController
-@RequestMapping("generator/ratings")
+@RequestMapping("ratings")
 public class RatingsController {
     @Autowired
     private RatingsService ratingsService;
@@ -69,8 +65,8 @@ public class RatingsController {
      * 删除
      */
     @RequestMapping("/delete")
-    public R delete(@RequestBody Integer[] userIds){
-		ratingsService.removeByIds(Arrays.asList(userIds));
+    public R delete(@RequestBody Integer[] userIds) {
+        ratingsService.removeByIds(Arrays.asList(userIds));
 
         return R.ok();
     }

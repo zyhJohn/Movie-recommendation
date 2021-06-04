@@ -8,6 +8,7 @@ import java.util.Map;
 
 public interface MovieService extends IService<MovieEntity> {
 
+
     PageUtils queryPage(Map<String, Object> params);
 }
 
